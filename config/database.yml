@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: testing_db_dev
+  pool: 5
+  host: localhost
+  username: "krutik"
+  password: "123"
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: testing_db_test
+  pool: 5
+  username: "krutik"
+  password: "123"
+
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>
