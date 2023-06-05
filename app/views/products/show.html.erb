@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h1 class="text-center">Product #<%= @product.id %></h1>
+  <br><hr>
+
+  <h5>
+    <strong>Product Name: </strong>
+    <%= @product.product_name %>
+  </h5><hr>
+
+  <h5>
+    <strong>Price: </strong>
+    <%= @product.price %>
+  </h5><hr>
+
+  <h5>
+    <strong>Description: </strong>
+    <%= @product.description %>
+  </h5><hr>
+
+  <h5>
+    <strong>Published at: </strong>
+    <%= @product.created_at %>
+  </h5><hr>
+
+  <h5>
+    <strong>Last updated: </strong>
+    <%= @product.updated_at %>
+  </h5><hr>
+  
+  <a class="btn btn-sm btn-danger float-left" href="/">Back</a>
+
+</div>
