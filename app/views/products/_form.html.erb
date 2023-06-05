@@ -1,0 +1,22 @@
+<%= form_for product do |form| %>
+  <div class="form-group">
+    <%= form.label :product_name %>
+    <%= form.text_field :product_name, class:"form-control", placeholder:"Enter productname" %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= form.label :price %>
+    <%= form.number_field :price, class:"form-control", placeholder:"Enter price" %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= form.label :description %>
+    <%= form.text_area :description, class:"form-control", placeholder:"Enter description", rows:"4" %>
+  </div>
+  <br>
+
+  <%= form.submit value:"#{submit_btn}", class:"btn btn-sm btn-success float-left" %>
+  <%= link_to "Back", products_path, class:"btn btn-sm btn-danger float-right" %>
+<% end %>

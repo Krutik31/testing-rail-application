@@ -11,6 +11,18 @@
   </head>
 
   <body>
+    <% if notice %>
+      <div class="container w-50 justify-content-center">
+        <br>
+        <p class="notice fs-6 p-1" style="background-color: #caf3d1; text-align: center; border: solid green 2px;"><%= notice %></p>
+      </div>
+    <% elsif alert %> 
+      <div class="container w-50 justify-content-center">
+        <br>
+        <p class="alert fs-6 p-1" style="background-color: #f9aeae; text-align: center; border: solid red 2px;"><%= alert %></p>
+      </div>
+    <% end %>  
+
     <%= yield %>
   </body>
 </html>

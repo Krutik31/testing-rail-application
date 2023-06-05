@@ -1,0 +1,22 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+test:
+  {
+    product_name: "Laptop",
+    price: 48000,
+    description: "Nice Laptop",
+    user: test_user,
+  }
+
+one:
+  { product_name: "", price: 100, description: "test description1", user: one }
+
+two:
+  {
+    product_name: "product2",
+    price: "",
+    description: "test description2",
+    user: one,
+  }
+
+three: { product_name: "product3", price: 300, description: "", user: two }
